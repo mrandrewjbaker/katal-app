@@ -1,0 +1,71 @@
+.katNestedNav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transition: all 0.2s linear;
+
+  .katNestedNav_label {
+    width: 100%;
+    min-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-indent: 1rem;
+    transition: background-color 0.2s ease-in-out;
+    
+    &:hover {
+      background-color: #2727273b;
+    }
+
+    
+    .katNestedNav_labelIcon {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      font-size: 1.5rem;
+      margin-top: -2px;
+      margin-left: 1rem;
+    }
+
+    .katNestedNav_labelText {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      font-size: 1.25rem;
+    }
+
+    .katNestedNav_labelToggleIcon {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      height: 100%;
+      margin-left: auto;
+      font-size: 1.5rem;
+      margin-top: 4px;
+      text-indent: 1rem;
+    }
+  }
+  
+  .katNestedNav_checkbox {
+    display: none;
+  }
+
+  .katNestedNavList {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s linear;
+    padding: 0;
+  }
+
+  .katNestedNav_checkbox:checked ~ .katNestedNavList {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    transition: height 0.35s linear;
+  }
+}

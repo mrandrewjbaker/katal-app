@@ -1,0 +1,22 @@
+.katLink_container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+
+  .katLink {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .katLink_icon {
+      font-size: 1.5rem;
+    }
+  }  
+}

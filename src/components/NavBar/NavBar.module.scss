@@ -1,0 +1,35 @@
+.NavBar {
+  height: 3.5rem;
+  width: calc(100%);
+  background: #d69809;
+  display: flex;
+  flex-direction: row;
+
+
+  .NavBarSection {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 33.33%;
+    justify-content: start;
+    align-content: center;
+
+    .NavBarSideMenuToggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .NavBarSideMenuToggle_icon {
+        height: 2rem;
+        width: 100%;
+      }
+    }
+  }
+
+  .NavBarLogo {
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+    margin-left: .5rem;
+  }  
+}

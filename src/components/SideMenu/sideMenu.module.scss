@@ -1,0 +1,130 @@
+.sideMenu {
+  position: fixed;
+  top: 3.5rem;
+  left: 0;
+  width: 27%;
+  height: calc(100% - 3.5rem);
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  background-color: #252525;
+  
+
+  .sideMenu_closed {
+    width: 0%;
+    transform: translateX(-100%);
+  }
+
+  .sideMenu_opened {
+    transform: translateX(27%);
+  }
+
+  .sideMenu_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    
+    .sideMenu_listItem {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #282828;
+      background-color: #29835c;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+      height: 3rem;
+      width: 100%;
+
+      &:hover {
+        background-color: #1d4d31;
+        color: #fff;
+      }
+
+      .sideMenu_listItem___link {
+        color: #fefefe;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+        line-height: 1rem;
+        width: 100%;
+        height: 100%;
+        text-indent: 25px;
+      }
+
+      &.sideMenu_listItem___admin {
+        background-color: #ab3223;
+        color: #fff;
+
+        &:hover {
+          background-color: #5d2019;
+          color: #fff;
+        }
+      }
+
+      .sideMenu_nestedList___label {
+        width: 100%;
+      border-radius: 0.35rem;
+
+
+        .sideMenu_nestedList___checkbox {
+          display: none;
+       
+          
+        }
+      }
+    }
+  }
+
+  .sideMenu_listItem___admin {
+    background-color: #d86234;
+    color: #fff;
+  }
+
+  .sideMenu_listItem___sales {
+    background-color: #2d77bd;
+    color: #fff;
+  }
+
+  .sideMenu_listItem___maintenence {
+    background-color: #fefefe;
+    color: #323232;
+  }
+
+  .sideMenu_listItem___data {
+    background-color: #00aeff;
+    color: #fff;
+  }
+
+  .sideMenu_listItem___inventory {
+    background-color: #8c67aa;
+    color: #fff;
+  }
+  .sideMenu_listItem___manufacturing {
+    background-color: #ffe56f;
+    color: #323232;
+  }
+
+  .sideMenu_listItem___green {
+    background-color: #29835c;
+  }
+
+  .sideMenu_listItem___simulation {
+    background-color: #eb6958;
+    color: #fefefe;
+  }
+
+  .sideMenu_listItem___webservices {
+    background-color: #1a965c;
+    color: #fefefe;
+  }
+}

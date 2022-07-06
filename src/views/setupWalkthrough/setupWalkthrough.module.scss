@@ -1,0 +1,53 @@
+.setupWalkthrough { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+  .setupWalkthrough_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .setupWalkthrough_formLabel {
+      margin-top: 2rem;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding: 0;
+
+      .setupWalkthrough_formInput {
+        width: 99%;
+        height: 2.5rem;
+        border-radius: .35rem;
+        padding: 0;
+      }
+    }
+
+    .setupWalkthrough_formButton {
+      margin-top: 2rem;
+      height: 2.5rem;
+      width: 7rem;
+      border: none;
+      border-radius: .35rem;
+      background-color: #1db178;
+      color: #fefefe;
+      &:hover {
+        background-color: #2c9e72;
+      }
+
+      .setupWalkthrough_text {
+
+      }
+    }
+  }
+}

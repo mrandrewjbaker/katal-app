@@ -1,0 +1,40 @@
+.katNavListItem {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 100%;
+  min-height: 3rem;
+  text-indent: 1rem;
+  color: #fff;
+  background-color: #3a3a3a;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #272727;
+  }
+
+  .katNavListItem_link {
+    display: flex;
+    align-items: center;
+    color: #fefefe;
+    width: 100%;
+    text-decoration: none;
+
+    .katNavListItem_icon {
+      height: 100%;
+      font-size: 1.5rem;
+      margin-top: 5px;
+    }
+  }
+
+  &.katNavListItem___nested {
+    height: 3rem;
+    background-color: transparent;
+    
+    .katNavListItem_icon {
+      text-indent: 2.5rem;
+    }
+  }
+}
